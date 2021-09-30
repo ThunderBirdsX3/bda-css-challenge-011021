@@ -1,0 +1,93 @@
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+// Typography
+$font-family-sans-serif: 'Sarabun', sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.6;
+
+$white: #FFFFFF;
+$gray-100: #ededed;
+$gray-200: #e1e1e1;
+$gray-300: #d3d3d3;
+$gray-400: #c4c4c4;
+$gray-500: #b3b3b3;
+$gray-600: #a0a0a0;
+$gray-700: #898989;
+$gray-800: #6c6c6c;
+$gray-900: #3f3f3f;
+$black: #121212;
+
+//// Colors
+//$blue: #4781B7;
+//$indigo: #6574cd;
+//$purple: #9561e2;
+//$pink: #f66d9b;
+//$red: #FF3B30;
+//$brown: #51331E;
+//$orange: #D27A2E;
+//$yellow: #FFE4CC;
+//$green: #47B7A5;
+//$teal: #7ECCC0;
+//$cyan: #7EA7CC;
+//$dark: #121212;
+
+// Colors
+$blue: #299DF5;
+$bluelight: #EDF9FE;
+$sky: #C2EAFC;
+$indigo: #B49FFF;
+$purple: #815DE6;
+$pink: #f66d9b;
+$red: #D55742;
+$brown: #5A3325;
+$orange: #FF9500;
+$yellow: #FFCC00;
+$green: #34AA44;
+$greenlight: #CEECD3;
+$babygreenlight: #DFF3E3;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$primary: $purple;
+$secondary: $indigo;
+$success: $green;
+$info: $blue;
+$warning: $orange;
+$danger: $red;
+$light: $white;
+$dark: $black;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+    (
+      "primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "yellow": $yellow,
+      "danger": $danger,
+      "light": $light,
+      "dark": $dark
+    ),
+    $theme-colors
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 769px,
+  lg: 1025px,
+  xl: 1367px
+) !default;
+
+$body-bg: #EFF3F6;
+$body-color: $dark;
+
+$border-width: 1px;
+$border-color: $gray-200;
