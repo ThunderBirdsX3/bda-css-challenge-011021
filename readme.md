@@ -2,7 +2,8 @@
 
 ### มาแล้วจ้าาา โจทย์สำหรับ CSS Battle ตามลิ้งก์ : [โจทย์ CSS Battle @ Figma](https://www.figma.com/file/lOnStLYw7SWNXYigySab1O/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87-CSS?node-id=0%3A1)
 - รูปที่ใช้ในเว็บ เตรียมไว้ให้แล้วทั้งหมด
-- ICON ใช้ของ [Font Awesome](https://fontawesome.com/v5.15/icons) ตัวฟรี
+- ICON ใช้ของ [Font Awesome V5.15](https://fontawesome.com/v5.15/icons) ตัวฟรี
+- UI Component โดยใช้ [Bootstrap V4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
 ### Editor ที่ แนะนำ (หรือจะใช้อันอื่นก็ได้ครับ)
 - [PHPStorm](https://www.jetbrains.com/phpstorm/)
