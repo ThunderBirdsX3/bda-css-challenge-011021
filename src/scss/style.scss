@@ -1,6 +1,326 @@
 @import "variables";
+@import "~bootstrap/scss/mixins/breakpoints";
 
-.navbar-logo {
-  position: absolute;
-  top: 0;
+.navbar {
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $gray-800;
+        padding: 0.5rem 1.5rem;
+
+        &:hover {
+          color: $gray-900;
+        }
+      }
+
+      &.active .nav-link {
+        color: $gray-900;
+      }
+    }
+  }
+}
+
+.image-top {
+  height: 416px;
+  background-image: url("../images/nasa-space-hd.jpg");
+  background-position: 0 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+
+  & .image-top-text-company {
+    font-size: 62px;
+    color: $yellow;
+
+    @include media-breakpoint-up('md') {
+      border-right: 2px solid white;
+    }
+  }
+
+  & .image-top-text-detail {
+    font-size: 20px;
+    color: white;
+
+    & a {
+      color: white;
+    }
+  }
+
+  & .free-try {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space: nowrap;
+  }
+}
+
+.info-card {
+  text-align: center;
+  height: 100%;
+
+  & .title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  & img {
+    margin: 1rem;
+  }
+
+  & .detail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $gray-800;
+  }
+
+  & button {
+    margin-top: 1rem;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.package-info {
+  border: 2px solid;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px 16px;
+  position: relative;
+  color: $gray-800;
+
+  &.developer {
+    border-color: $info;
+
+    & .info-icon {
+      background: linear-gradient(135deg, #77D2FF 0%, #3EA4DB 100%);
+    }
+
+    & .highlight {
+      color: $info;
+    }
+
+    & hr {
+      border-color: $info;
+    }
+  }
+
+  &.startup {
+    border-color: $success;
+
+    & .info-icon {
+      background: linear-gradient(150.69deg, #6FE783 -12.15%, #59D96E -12.14%, #1BB934 91.12%);
+    }
+
+    & .highlight {
+      color: $success;
+    }
+
+    & hr {
+      border-color: $success;
+    }
+  }
+
+  &.organization {
+    border-color: $primary;
+
+    & .info-icon {
+      background: linear-gradient(275.56deg, #6758F3 10.95%, #B49FFF 107.1%);
+    }
+
+    & .highlight {
+      color: $primary;
+    }
+
+    & hr {
+      border-color: $primary;
+    }
+  }
+
+  &.optimize {
+    color: $brown;
+    border-color: $yellow;
+    background: linear-gradient(107.11deg, #FFCC00 1.54%, #FF9500 89.56%);
+    background-repeat: no-repeat;
+
+    & .info-icon {
+      background-color: white;
+      border: 2px solid $yellow;
+
+      & em {
+        background: linear-gradient(107.11deg, #FFCC00 1.54%, #FF9500 89.56%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    & .highlight {
+      color: $body-color;
+    }
+
+    & hr {
+      border-color: $brown;
+    }
+  }
+
+  & .info-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 8px;
+    color: white;
+    top: -16px;
+    right: 24px;
+  }
+
+  & .header {
+    padding: 0 8px;
+    position: relative;
+    z-index: 2;
+
+    & .title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    & .price {
+      font-weight: 500;
+      font-size: 24px;
+      color: $body-color;
+    }
+
+    & .user {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  & .detail {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+}
+
+.package-detail {
+  border: 1px solid $border-color;
+  background-color: white;
+  border-radius: 8px;
+
+  & table {
+    & thead {
+      font-weight: 600;
+
+      & th {
+        border-top: none;
+        border-bottom-width: 1px;
+        padding: 24px 16px;
+        color: $gray-800;
+        font-size: 18px;
+        white-space: nowrap;
+
+        &.title {
+          font-size: 22px;
+          color: $body-color;
+        }
+
+        & div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          & .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            color: white;
+            border-radius: 8px;
+            margin-right: 16px;
+          }
+        }
+
+        &.developer .icon-wrapper {
+          background: linear-gradient(135deg, #77D2FF 0%, #3EA4DB 100%);
+        }
+
+        &.startup .icon-wrapper {
+          background: linear-gradient(150.69deg, #6FE783 -12.15%, #59D96E -12.14%, #1BB934 91.12%);
+        }
+
+        &.optimize .icon-wrapper {
+          background: linear-gradient(107.11deg, #FFCC00 1.54%, #FF9500 89.56%);
+        }
+
+        &.organization .icon-wrapper {
+          background: linear-gradient(275.56deg, #6758F3 10.95%, #B49FFF 107.1%);
+        }
+      }
+    }
+
+    & tbody {
+      text-transform: uppercase;
+      font-size: 14px;
+
+      & td {
+        vertical-align: middle;
+        height: 80px;
+
+        & span {
+          font-size: 20px;
+        }
+
+        & a {
+          width: 77px;
+          display: block;
+          background: $light;
+          border: 1px solid $border-color;
+          border-radius: 3px;
+          color: $primary;
+          text-decoration: none;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.customers {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
+  & img {
+    width: 160px;
+    height: auto;
+  }
+}
+
+.col-form-label {
+  color: $gray-800;
+}
+
+textarea {
+  min-height: 95px;
+}
+
+.border-lg-right {
+  @include media-breakpoint-up('lg') {
+    border-right: 1px solid $border-color;
+  }
 }

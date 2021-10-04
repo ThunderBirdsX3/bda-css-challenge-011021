@@ -1,5 +1,15 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/css/style.css": "/css/style.css"
+    "/css/style.css": "/css/style.css",
+    "/images/CMU.png": "/images/CMU.png",
+    "/images/NSP.png": "/images/NSP.png",
+    "/images/PPS.png": "/images/PPS.png",
+    "/images/STEP.png": "/images/STEP.png",
+    "/images/THAI_POST.png": "/images/THAI_POST.png",
+    "/images/icon-developer.svg": "/images/icon-developer.svg",
+    "/images/icon-organization.svg": "/images/icon-organization.svg",
+    "/images/icon-startup.svg": "/images/icon-startup.svg",
+    "/images/nasa-space-hd.jpg": "/images/nasa-space-hd.jpg",
+    "/images/navbar-logo.svg": "/images/navbar-logo.svg"
 }

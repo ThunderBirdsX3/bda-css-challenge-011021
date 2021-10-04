@@ -11,10 +11,10 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container position-relative">
       <a class="navbar-logo" href="#">
-        <img src="./image/navbar-logo.svg" alt="Navbar logo">
+        <img src="images/navbar-logo.svg" alt="Navbar logo">
       </a>
       <button
         class="navbar-toggler ml-auto"
@@ -31,13 +31,19 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">เกี่ยวกับเรา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">BDA โซลูชัน</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
+            <a class="nav-link" href="#">ราคา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">บริษัทคู่ค้า</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">เรียนรู้เพิ่มเติม</a>
           </li>
         </ul>
       </div>
@@ -45,30 +51,439 @@
     </div>
   </nav>
 
-  <div>
-    <img src="./image/nasa-space-hd.jpg" alt="image" class="w-100" style="height: 400px">
+  <div class="image-top d-flex flex-wrap">
+    <div class="row justify-content-center align-items-center align-self-center w-100">
+      <div class="col-12 col-md-auto image-top-text-company">
+        BDA Cloud
+      </div>
+      <div class="col-12 col-md-auto image-top-text-detail">
+        <div>สัมผัสประสบการณ์ Cloud storage แบบใหม่ได้ที่นี่</div>
+        <a href="#">คลิกเลย >></a>
+      </div>
+    </div>
+
+    <a href="#" class="free-try">เริ่มต้นใช้งานฟรี!
+      <small>1เดือนแรก</small>
+    </a>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mt-3">
-        <div class="card">
-          นักพัฒนาระบบ
+  <div class="container pb-3">
+    <!-- info-card -->
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4 mt-3">
+        <div class="card info-card">
+          <div class="card-body">
+            <div class="title">นักพัฒนาระบบ</div>
+            <img src="images/icon-developer.svg" alt="">
+            <div class="detail">คุณกำลังเริ่มต้นสิ่งใหม่ๆ อยู่ใช่ไหม ?</div>
+            <button class="btn btn-info">เริ่มกันเลย !</button>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-4 mt-3">
-        <div class="card">
-          ธุรกิจสตาร์ทอัพ
+      <div class="col-md-6 col-lg-4 mt-3">
+        <div class="card info-card">
+          <div class="card-body">
+            <div class="title">ธุรกิจสตาร์ทอัพ</div>
+            <img src="images/icon-startup.svg" alt="">
+            <div class="detail">หากคุณกำลังมองหาสิ่งที่คุ้มค่าและตอบโจทย์กับธุรกิจของคุณ</div>
+            <button class="btn btn-success">สัมผัสประสบการณ์ใหม่</button>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-4 mt-3">
-        <div class="card">
-          องค์กรขนาดใหญ่
+      <div class="col-md-6 col-lg-4 mt-3">
+        <div class="card info-card">
+          <div class="card-body">
+            <div class="title">องค์กรขนาดใหญ่</div>
+            <img src="images/icon-organization.svg" alt="">
+            <div class="detail">พัฒนาองค์กรอย่างมีประสิทธิภาพไปสู่ความสามารถที่ไร้ขีดจำกัด</div>
+            <button class="btn btn-primary">เพิ่มประสิทธิภาพสูงสุด</button>
+          </div>
+
         </div>
       </div>
     </div>
+    <!-- info-card -->
+
+    <!-- package-info -->
+    <div class="card mt-3">
+      <div class="card-body">
+        <div class="text-center mb-4">
+          <h5>เลือกแพ็คเกจที่เหมาะกับคุณ</h5>
+          <span class="text-gray">แพ็คเกจของเราเริ่มต้นที่ 639 บาท/เดือนเท่านั้น</span>
+        </div>
+
+        <div class="row">
+          <!-- developer -->
+          <div class="col-xl-3 col-md-6 mt-4">
+            <div class="package-info developer">
+              <div class="info-icon">
+                <em class="fas fa-palette fa-2x"></em>
+              </div>
+              <div class="header">
+                <div class="title">นักพัฒนาระบบ</div>
+                <div>
+                  <span class="price">639</span>
+                  บาท/เดือน
+                </div>
+                <div class="user">2 ผู้ใช้งาน</div>
+              </div>
+              <hr>
+              <div class="detail">
+                <div>
+                  <span class="highlight">10</span>
+                  โปรเจ็ค
+                </div>
+                <div>
+                  <span class="highlight">3</span>
+                  ลูกค้า
+                </div>
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  จำนวนข้อความ
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- developer -->
+
+          <!-- startup -->
+          <div class="col-xl-3 col-md-6 mt-4">
+            <div class="package-info startup">
+              <div class="info-icon">
+                <em class="fas fa-store-alt fa-2x"></em>
+              </div>
+              <div class="header">
+                <div class="title">ธุรกิจสตาร์ทอัพ</div>
+                <div>
+                  <span class="price">969</span>
+                  บาท/เดือน
+                </div>
+                <div class="user">6 ผู้ใช้งาน</div>
+              </div>
+              <hr>
+              <div class="detail">
+                <div>
+                  <span class="highlight">1000</span>
+                  โปรเจ็ค
+                </div>
+                <div>
+                  <span class="highlight">300</span>
+                  ลูกค้า
+                </div>
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  จำนวนข้อความ
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- startup -->
+
+          <!-- optimize -->
+          <div class="col-xl-3 col-md-6 mt-4">
+            <div class="package-info optimize">
+              <div class="info-icon">
+                <em class="fas fa-bolt fa-2x"></em>
+              </div>
+              <div class="header">
+                <div class="title">เพิ่มประสิทธิภาพ</div>
+                <div>
+                  <span class="price">1,899</span>
+                  บาท/เดือน
+                </div>
+                <div class="user">15 ผู้ใช้งาน</div>
+              </div>
+              <hr>
+              <div class="detail">
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  โปรเจ็ค
+                </div>
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  ลูกค้า
+                </div>
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  จำนวนข้อความ
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- optimize -->
+
+          <!-- organization -->
+          <div class="col-xl-3 col-md-6 mt-4">
+            <div class="package-info organization">
+              <div class="info-icon">
+                <em class="fas fa-city fa-2x"></em>
+              </div>
+              <div class="header">
+                <div class="title">องค์กรขนาดใหญ่</div>
+                <div>
+                  <span class="price">8,559</span>
+                  บาท/เดือน
+                </div>
+                <div class="user">100 ผู้ใช้งาน</div>
+              </div>
+              <hr>
+              <div class="detail">
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  โปรเจ็ค
+                </div>
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  ลูกค้า
+                </div>
+                <div>
+                  <span class="highlight">ไม่จำกัด</span>
+                  จำนวนข้อความ
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- organization -->
+        </div>
+      </div>
+    </div>
+    <!-- package-info -->
+
+    <!-- package-detail -->
+    <div class="table-responsive package-detail mt-3">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <th class="title">BDA Cloud Service</th>
+            <th class="developer">
+              <div>
+                <div class="icon-wrapper">
+                  <em class="fas fa-palette"></em>
+                </div>
+                นักพัฒนาระบบ
+              </div>
+            </th>
+            <th class="startup">
+              <div>
+                <div class="icon-wrapper">
+                  <em class="fas fa-store-alt"></em>
+                </div>
+                ธุรกิจสตาร์ทอัพ
+              </div>
+            </th>
+            <th class="optimize">
+              <div>
+                <div class="icon-wrapper">
+                  <em class="fas fa-bolt"></em>
+                </div>
+                เพิ่มประสิทธิภาพ
+              </div>
+            </th>
+            <th class="organization">
+              <div>
+                <div class="icon-wrapper">
+                  <em class="fas fa-city"></em>
+                </div>
+                องค์กรขนาดใหญ่
+              </div>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>processor (Cpu)</td>
+            <td>1 x 2.70 GHz</td>
+            <td>2 x 2.70 ghz</td>
+            <td>3 x 2.70 ghz</td>
+            <td>4 x 2.70 ghz</td>
+          </tr>
+          <tr>
+            <td>operating system</td>
+            <td>linux/windows</td>
+            <td>linux/windows</td>
+            <td>linux/windows</td>
+            <td>linux/windows</td>
+          </tr>
+          <tr>
+            <td>storage</td>
+            <td>50 gb</td>
+            <td>75 gb</td>
+            <td>100 gb</td>
+            <td>125 gb</td>
+          </tr>
+          <tr>
+            <td>additional storage</td>
+            <td>option</td>
+            <td>option</td>
+            <td>option</td>
+            <td>option</td>
+          </tr>
+          <tr>
+            <td>ram</td>
+            <td>2 gb</td>
+            <td>3 gb</td>
+            <td>4 gb</td>
+            <td>5 gb</td>
+          </tr>
+          <tr>
+            <td>data transfer</td>
+            <td>
+              10 tb
+              <br>
+              bandwidth
+            </td>
+            <td>
+              15 tb
+              <br>
+              bandwidth
+            </td>
+            <td>
+              20 tb
+              <br>
+              bandwidth
+            </td>
+            <td>
+              30 tb
+              <br>
+              bandwidth
+            </td>
+          </tr>
+          <tr>
+            <td>ชำระราย 1 เดือน</td>
+            <td>
+              <span>639</span>
+              บาท/ เดือน
+            </td>
+            <td>
+              <span>969</span>
+              บาท/ เดือน
+            </td>
+            <td>
+              <span>1,899</span>
+              บาท/ เดือน
+            </td>
+            <td>
+              <span>8,559</span>
+              บาท/ เดือน
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ชำระราย 1 ปี
+              <br>
+              ส่วนลด 15%
+            </td>
+            <td>
+              <span>543</span>
+              บาท/ เดือน
+            </td>
+            <td>
+              <span>823</span>
+              บาท/ เดือน
+            </td>
+            <td>
+              <span>1,614</span>
+              บาท/ เดือน
+            </td>
+            <td>
+              <span>7,275</span>
+              บาท/ เดือน
+            </td>
+          </tr>
+          <tr>
+            <td>ค่าติดตั้ง (ครั้งแรก)</td>
+            <td>
+              <a href="#">ฟรี</a>
+            </td>
+            <td>
+              <a href="#">ฟรี</a>
+            </td>
+            <td>
+              <a href="#">ฟรี</a>
+            </td>
+            <td>
+              <a href="#">ฟรี</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- package-detail -->
+
+    <!-- customers -->
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="text-center">ลูกค้าที่ไว้วางใจให้เราดูแล</h5>
+
+        <div class="customers">
+          <img src="images/THAI_POST.png" alt="thai_post">
+          <img src="images/PPS.png" alt="pps">
+          <img src="images/NSP.png" alt="nsp">
+          <img src="images/STEP.png" alt="step">
+          <img src="images/CMU.png" alt="cmu">
+        </div>
+      </div>
+    </div>
+    <!-- customers -->
+
+    <!-- contact us -->
+    <div class="card mt-3">
+      <div class="card-body px-md-5">
+        <h5>ติดต่อเรา</h5>
+
+        <div class="row">
+          <div class="col-lg-6 border-lg-right">
+            <div class="form-group row">
+              <label for="name" class="col-form-label col-md-3">ชื่อ-นามสกุล</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="email" class="col-form-label col-md-3">อีเมล</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="email" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="tel" class="col-form-label col-md-3">เบอร์โทรศัพท์</label>
+              <div class="col-md-9">
+                <input id="tel" name="tel" type="tel" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <label for="section" class="col-form-label col-md-3">หัวข้อ</label>
+              <div class="col-md-9">
+                <select id="section" name="section" class="form-control"></select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="description" class="col-form-label col-md-3">รายละเอียด</label>
+              <div class="col-md-9">
+                <textarea id="description" name="description" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 text-right">
+            <button class="btn btn-primary px-3">
+              ส่ง
+              <em class="fas fa-paper-plane ml-3"></em>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us -->
   </div>
 </body>
 </html>
