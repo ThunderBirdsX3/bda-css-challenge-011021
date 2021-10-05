@@ -25,7 +25,7 @@
   }
 }
 
-.image-top {
+.banner {
   height: 416px;
   background-image: url("../images/nasa-space-hd.jpg");
   background-position: 0 25%;
@@ -34,7 +34,7 @@
   text-align: center;
   position: relative;
 
-  & .image-top-text-company {
+  & .banner-text-company {
     font-size: 62px;
     color: $yellow;
 
@@ -43,7 +43,7 @@
     }
   }
 
-  & .image-top-text-detail {
+  & .banner-text-detail {
     font-size: 20px;
     color: white;
 

@@ -13,7 +13,7 @@
   color: #3f3f3f;
 }
 
-.image-top {
+.banner {
   height: 416px;
   background-image: url(../images/nasa-space-hd.jpg?d5e79eb89f4e4aa5f4e5f19a442f2ca4);
   background-position: 0 25%;
@@ -22,23 +22,23 @@
   text-align: center;
   position: relative;
 }
-.image-top .image-top-text-company {
+.banner .banner-text-company {
   font-size: 62px;
   color: #FFCC00;
 }
 @media (min-width: 768px) {
-  .image-top .image-top-text-company {
+  .banner .banner-text-company {
     border-right: 2px solid white;
   }
 }
-.image-top .image-top-text-detail {
+.banner .banner-text-detail {
   font-size: 20px;
   color: white;
 }
-.image-top .image-top-text-detail a {
+.banner .banner-text-detail a {
   color: white;
 }
-.image-top .free-try {
+.banner .free-try {
   position: absolute;
   bottom: 40px;
   left: 50%;
